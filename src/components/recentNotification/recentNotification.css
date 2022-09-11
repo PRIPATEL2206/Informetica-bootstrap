@@ -1,0 +1,4 @@
+.recentNotification{
+    flex: 1 1 auto;
+    color: var(--bs-card-color);
+}
