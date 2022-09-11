@@ -1,11 +1,13 @@
 import React from 'react'
 import agendaImage from "../image/mainAgenda.png"
 import  "./mainAgenda.css"
+import '../comon.css'
+
 
 
 export default function MainAgenda() {
     return (
-            <div className="card text-bg-dark w-75 min-vw-50 overflow-hidden mh-50">
+            <div className=" card text-bg-dark w-75 min-vw-50 overflow-hidden mh-50 f-we">
                 <img src={agendaImage} className="card-img " alt="..."/>
                     <div className="card-img-overlay-c set-end">
                         <h2 className="card-title text-dark">Card title</h2>

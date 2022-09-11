@@ -5,3 +5,11 @@
 .bo-ro{
     border-radius: 8px;
 }
+@media (max-width: 970px) {
+    .flex-row{
+        flex-direction: column !important;
+    }
+    .f-we{
+        width: 100% !important;
+    }
+}
