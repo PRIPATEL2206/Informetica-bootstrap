@@ -1,0 +1,82 @@
+<div className="schemeContainer">
+        <div className="schemeCard">
+          <div className="schemeTitle">Education</div>
+          <div className="itemBox">
+            <div className="cover">
+              <div className="leftSlider">&lt;</div>
+              <div className="items">1</div>
+              <div className="items">2</div>
+              <div className="items">3</div>
+              <div className="items">4</div>
+              <div className="rightSlider">&gt;</div>
+            </div>
+          </div>
+        </div>
+        <div className="schemeCard">
+          <div className="schemeTitle">Education</div>
+          <div className="itemBox">
+            <div className="cover">
+              <div className="items">1</div>
+              <div className="items">2</div>
+              <div className="items">3</div>
+              <div className="items">4</div>
+            </div>
+          </div>
+        </div>
+        <div className="schemeCard">
+          <div className="schemeTitle">Education</div>
+          <div className="itemBox">
+            <div className="cover">
+              <div className="items">1</div>
+              <div className="items">2</div>
+              <div className="items">3</div>
+              <div className="items">4</div>
+            </div>
+          </div>
+        </div>
+        <div className="schemeCard">
+          <div className="schemeTitle">Education</div>
+          <div className="itemBox">
+            <div className="cover">
+              <div className="items">1</div>
+              <div className="items">2</div>
+              <div className="items">3</div>
+              <div className="items">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      {data &&
+          data.map((schemeType) => {
+            return (
+              <div className="box" key={schemeType.id}>
+                {schemeType.isVisible ? (
+                  <div className="mainBox">
+                    <h3 className="SchemeTypeHeading">{schemeType.type}</h3>
+                    <div className="cardContainer">
+                      <div className="leftSlider">&lt;</div>
+                      <div className="middle">
+                        {image &&
+                          image.map((photo) => {
+                            return (
+                              <div
+                                className="imageBox"
+                                key={schemeType.imageId}
+                              >
+                                <img src={photo.path} alt="None" />
+                              </div>
+                            );
+                          })}
+                      </div>
+                      <div className="rightSlider">&gt;</div>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}

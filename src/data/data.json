@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "type": "Education",
+        "isVisible": true,
+        "images": [
+            {
+                "imageId":1,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":2,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":3,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":4,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "Farmer",
+        "isVisible": true,
+
+        "images": [
+            {
+                "imageId":1,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":2,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":3,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":4,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "Women",
+        "isVisible": true,
+
+        "images": [
+            {
+                "imageId":1,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":2,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":3,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":4,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "Other",
+        "isVisible": true,
+
+        "images": [
+            {
+                "imageId":1,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":2,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":3,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            },
+            {
+                "imageId":4,
+                "path": "images/IMG-20220917-WA0009.jpg"
+            }
+        ]
+    }
+]

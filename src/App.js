@@ -1,33 +1,38 @@
-// import logo from './logo.svg';
-
 import './App.css';
-import Body from './components/Body/Body';
-import NavBar from './components/Navbar/NavBar';
+import React, { Component } from 'react';
+import PopUp from './components/PopUp/PopUp'
+import Navbar from './components/Navbar/Navbar'
+import About from './components/About/About'
+import Footer from './components/Footer/Footer'
+import Scheme from './components/Scheme/Scheme'
+// import Education from './data/Education.json'
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      Education : [],
+      serachfield : ''
+    }
+  }
 
-function App() {
-  return (
-    /* inbuild
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reloa
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React hi
-        </a>
-      </header>
-    </div>*/
-    <>
-    <NavBar/>
-    <Body/>
-    </>
-  );
+  onSearchChange = (event) => {
+    this.setState({serachfield : event.target.value})
+  }
+  render(){
+
+    // const filterScheme = this.state.Education.filter(scheme => {
+    //   return Education.name.toLowerCase().includes(this.state.serachfield.toLowerCase());
+    // })
+    return (
+      <div className="App">
+        <PopUp />
+        <Navbar searchChange ={this.onSearchChange}/>
+        <About />
+        <Scheme scarch={this.state.serachfield}/>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

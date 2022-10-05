@@ -1,0 +1,171 @@
+.aboutBox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0 1rem; */
+    padding-left: 3rem;
+}
+
+.about#blur2.active2{
+    filter: blur(10px);
+}
+
+.aboutBox h1 {
+    margin-bottom: 1.2rem;
+    font-size: 5rem;
+}
+
+.aboutBox h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+
+}
+
+.aboutBox p {
+    margin-bottom: 1.2rem;
+    font-size: 1.9rem;
+
+}
+
+.aboutBox button {
+    padding: 1.5rem 2rem;
+    margin-right: 1rem;
+    align-items: flex-start;
+    width: 15rem;
+    border: none;
+    border-radius: 1rem;
+    /* background-color: rgb(40, 40, 138); */
+    background-color: orange;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.aboutBox button:hover {
+    opacity: 0.8;
+    background-color: rgb(197, 141, 38);
+}
+
+.ruContainer {
+    height: 100%;
+    width: 100%;
+    /* display: grid;
+    grid-template-rows: 10% 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* .center {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    height: 10%;
+    width: 100%;
+}
+
+.box2 {
+    height: 100%;
+    width: 100%;
+} */
+
+.box1 {
+    height: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-bottom: 0.1rem;
+}
+
+.box1Heading {
+    /* padding: 1rem; */
+    font-size: 0.7rem;
+}
+
+.box2 {
+    height: 50%;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+    .leftContainer {
+        width: 70%;
+    }
+
+    .rightContainer {
+        width: 30%;
+    }
+
+    .aboutBox {
+        padding-left: 3;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutBox {
+        align-items: center;
+    }
+
+    .aboutBox h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .aboutBox h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .aboutBox p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .aboutBox button {
+        font-size: 1rem;
+        width: 13rem;
+    }
+
+    .aboutBox {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 6px;
+    }
+
+    .aboutBox p {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .aboutBox {
+        padding: 0 4rem;
+    }
+
+
+}
